@@ -755,24 +755,50 @@ a.font-style {
   border-radius: 4px;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
+  outline: none;
 }
 .button-footer {
+  display: inline-flex;
+  align-items: center;
   cursor: pointer;
   height: 50px;
-  padding-left: 29px;
-  padding-right: 62px;
+  padding-left: 30px;
+  padding-right: 30px;
   background: #2196f3;
   border: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
 }
 .button-footer::after {
   content: "";
+  display: inline-block;
   width: 24px;
   height: 24px;
+
   margin-left: 10px;
-  background-color: #fff;
+  margin-right: 0;
   background-image: url(../img/gitignore.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
+.block-form {
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+/* .form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+} */
