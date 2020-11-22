@@ -945,9 +945,7 @@ a.font-style {
   color: #757575;
   margin-bottom: 4px;
 }
-.section-checkbox {
-  margin-bottom: 30px;
-}
+
 .textarea {
   resize: none;
   width: 100%;
@@ -971,9 +969,45 @@ a.font-style {
   outline: none;
   border-color: #2196f3;
 }
+.section-checkbox {
+  display: block;
+  margin-bottom: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.input-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #2a2a2a;
+  border-radius: 4px;
+
+  transition: transform 250ms linear;
+}
+
+.input-checkbox:checked + .icon {
+  background-origin: border-box;
+  border-color: #2196f3;
+  background-color: #2196f3;
+  background-image: url('../img-input-icon/ckeckbox.svg');
+  background-size: contain;
+}
 
 .label-checkbox {
   width: 100%;
+  margin-left: 9px;
 
   font-weight: normal;
   font-size: 14px;
