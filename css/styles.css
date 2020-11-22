@@ -1,6 +1,6 @@
 /* Подключение шрифтов*/
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-top: 80px;
 }
 p {
@@ -262,7 +262,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .excretion.current:after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
@@ -395,7 +395,7 @@ img {
 /* Логотип */
 .logoheder {
   color: #000000;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -410,7 +410,7 @@ img {
   padding-bottom: 20px;
 
   color: #ffffff;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -429,7 +429,7 @@ img {
   line-height: 2;
 }
 a.font-style {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* текст */
 .font-text-one {
@@ -539,7 +539,7 @@ a.font-style {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../img/Img.jpg');
+    url("../img/Img.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -775,7 +775,7 @@ a.font-style {
   outline: none;
 }
 .button-footer::after {
-  content: '';
+  content: "";
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -970,10 +970,14 @@ a.font-style {
   border-color: #2196f3;
 }
 .section-checkbox {
-  display: block;
-  margin-bottom: 30px;
+  display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  color: #757575;
 }
 
 .input-checkbox {
@@ -986,43 +990,31 @@ a.font-style {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 .icon {
   display: inline-block;
   width: 15px;
   height: 15px;
   border: 2px solid #2a2a2a;
   border-radius: 4px;
-
   transition: transform 250ms linear;
 }
-
 .input-checkbox:checked + .icon {
   background-origin: border-box;
   border-color: #2196f3;
   background-color: #2196f3;
-  background-image: url('../img-input-icon/ckeckbox.svg');
+  background-image: url("../img-input-icon/icon-check.svg");
+  background-size: width 16 height 15;
   background-size: contain;
-}
-
-.label-checkbox {
-  width: 100%;
-  margin-left: 9px;
-
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  color: #757575;
+  background-repeat: no-repeat;
 }
 .link-modal {
+  padding: 0px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
   text-decoration-line: underline;
-
   color: #2196f3;
 }
-
 .button-form {
   display: flex;
   justify-content: center;

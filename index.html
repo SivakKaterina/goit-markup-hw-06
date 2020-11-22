@@ -642,18 +642,15 @@
               id="comment"
               placeholder="Введите текст"
             ></textarea>
-            <div class="section-checkbox">
-              <input
-                type="checkbox"
-                class="input-checkbox"
-                id="input-checkbox"
-              />
+            <label class="section-checkbox">
+              <input type="checkbox" class="input-checkbox" name="greement" />
               <span class="icon"></span>
-              <label for="input-checkbox" class="label-checkbox">
-                Соглашаюсь с рассылкой и принимаю
-                <span class="link-modal">Условия договора</span>
-              </label>
-            </div>
+              Соглашаюсь с рассылкой и принимаю &nbsp;<a
+                class="link-modal"
+                href="#"
+                >Условия договора</a
+              >
+            </label>
           </form>
           <div class="button-form">
             <button class="button-form-modal">Отправить</button>
@@ -664,16 +661,16 @@
     <script>
       (() => {
         const refs = {
-          openModalBtn: document.querySelector('[data-open-modal]'),
-          closeModalBtn: document.querySelector('[data-close-modal]'),
-          modal: document.querySelector('[data-backdrop]'),
+          openModalBtn: document.querySelector("[data-open-modal]"),
+          closeModalBtn: document.querySelector("[data-close-modal]"),
+          modal: document.querySelector("[data-backdrop]"),
         };
 
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
 
         function toggleModal() {
-          refs.modal.classList.toggle('is-hidden');
+          refs.modal.classList.toggle("is-hidden");
         }
       })();
     </script>
