@@ -970,6 +970,13 @@ a.font-style {
   border-color: #2196f3;
 }
 .section-checkbox {
+  display: block;
+  margin-bottom: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.section-checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -995,20 +1002,21 @@ a.font-style {
   width: 15px;
   height: 15px;
   border: 2px solid #2a2a2a;
-  border-radius: 4px;
-  transition: transform 250ms linear;
+  border-radius: 2px;
+  transition: 250ms linear;
+  margin-right: 8px;
 }
 .input-checkbox:checked + .icon {
   background-origin: border-box;
-  border-color: #2196f3;
+  border-color: transparent;
   background-color: #2196f3;
   background-image: url("../img-input-icon/icon-check.svg");
-  background-size: width 16 height 15;
   background-size: contain;
-  background-repeat: no-repeat;
+}
+
+.text-checkbox {
 }
 .link-modal {
-  padding: 0px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
