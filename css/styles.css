@@ -738,7 +738,6 @@ a.font-style {
 .svg-button-backdrop {
   background-color: #fff;
 }
-
 /* home task #6 */
 .wrap-form {
   display: flex;
@@ -757,10 +756,18 @@ a.font-style {
   color: rgba(255, 255, 255, 0.6);
   outline: none;
 }
+
+.footer-container {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
 .button-footer {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
+  width: 200px;
   height: 50px;
   padding-left: 30px;
   padding-right: 30px;
@@ -996,7 +1003,6 @@ a.font-style {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-  
 }
 .icon {
   display: inline-block;
